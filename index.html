@@ -3,30 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Fix Encyclopedia</title>
+    <title>Easy Fix Encyclopedia | Windows Setup</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>🛠️ Easy Fix Encyclopedia</h1>
-        <p>Master your world, one fix at a time.</p>
+        <p>Complete Guide: Windows OS Installation from Scratch</p>
     </header>
 
     <main>
         <section class="safety-banner">
-            <h2>⚠️ SAFETY FIRST</h2>
-            <p>Before any fix, ensure power is OFF, you have protective gear, and you've backed up your data.</p>
+            <h2>⚠️ SAFETY & REQUIREMENTS</h2>
+            <ul>
+                <li><strong>Backup:</strong> This process will wipe your "C:" Drive. Save your photos/files elsewhere first!</li>
+                <li><strong>Hardware:</strong> You need a 8GB+ USB Pendrive (it will be formatted).</li>
+                <li><strong>Internet:</strong> A stable connection is needed to download the ISO (approx 5GB-6GB).</li>
+            </ul>
         </section>
 
-        <article id="windows-fix">
-            <h2>How to Install Windows OS from Scratch</h2>
+        <article class="guide-step">
+            <h2>Step 1: The Toolkit (Official Links)</h2>
+            <p>Don't download from third-party sites. Use these official sources:</p>
+            <div class="link-box">
+                <a href="https://www.microsoft.com/software-download/windows11" target="_blank" class="btn">Download Windows 11 ISO</a>
+                <a href="https://rufus.ie/" target="_blank" class="btn">Download Rufus (Bootable Tool)</a>
+            </div>
+        </article>
+
+        <article class="guide-step">
+            <h2>Step 2: Create the Bootable USB</h2>
             <ol>
-                <li><strong>Download Rufus:</strong> Go to <a href="https://rufus.ie">rufus.ie</a>.</li>
-                <li><strong>Get Windows ISO:</strong> Download from Microsoft's official site.</li>
-                <li><strong>Make Bootable:</strong> Plug in your pendrive, open Rufus, select the ISO, and click 'Start'.</li>
-                <li><strong>Boot from USB:</strong> Restart PC, tap F12/F11, and select the Pendrive.</li>
+                <li>Open <strong>Rufus</strong> and plug in your USB drive.</li>
+                <li>Click <strong>SELECT</strong> and choose your downloaded Windows ISO.</li>
+                <li><strong>Partition Scheme:</strong> Choose <strong>GPT</strong> for modern PCs (UEFI) or <strong>MBR</strong> for very old PCs.</li>
+                <li>Click <strong>START</strong>. Wait until the status bar says "READY."</li>
             </ol>
         </article>
+
+        <article class="guide-step">
+            <h2>Step 3: Booting from the USB</h2>
+            <p>Insert the USB into the target PC and turn it on. Immediately tap your <strong>Boot Menu Key</strong>:</p>
+            <table class="boot-table">
+                <tr><th>Brand</th><th>Boot Key</th></tr>
+                <tr><td>HP</td><td>F9 or Esc</td></tr>
+                <tr><td>Dell / Lenovo</td><td>F12</td></tr>
+                <tr><td>ASUS</td><td>F8 or Esc</td></tr>
+                <tr><td>Acer / MSI</td><td>F11</td></tr>
+            </table>
+            <p>Select your <strong>USB Flash Drive</strong> from the list and press Enter.</p>
+        </article>
+
+        <article class="guide-step">
+            <h2>Step 4: The Installation Screen</h2>
+            <ol>
+                <li>Select Language and click <strong>Next > Install Now</strong>.</li>
+                <li>When asked for a key, click <strong>"I don't have a product key"</strong> (you can activate later).</li>
+                <li>Select your Windows Edition (Home or Pro).</li>
+                <li><strong>CRITICAL:</strong> Choose <strong>"Custom: Install Windows only (advanced)"</strong>.</li>
+                <li>Select the "Unallocated Space" or your "Drive 0" and click Next.</li>
+            </ol>
+        </article>
+
+        <section class="pro-tip">
+            <h3>💡 Pro Tip</h3>
+            <p>Once installed, run <strong>Windows Update</strong> immediately to get your drivers for sound, Wi-Fi, and graphics automatically.</p>
+        </section>
     </main>
 </body>
 </html>
