@@ -3,71 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Fix Encyclopedia | Windows Setup</title>
+    <title>Easy Fix Encyclopedia | Step-by-Step Guides</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>🛠️ Easy Fix Encyclopedia</h1>
-        <p>Complete Guide: Windows OS Installation from Scratch</p>
+        <p>Master your world with simple, safe, and free DIY guides.</p>
     </header>
 
     <main>
         <section class="safety-banner">
-            <h2>⚠️ SAFETY & REQUIREMENTS</h2>
-            <ul>
-                <li><strong>Backup:</strong> This process will wipe your "C:" Drive. Save your photos/files elsewhere first!</li>
-                <li><strong>Hardware:</strong> You need a 8GB+ USB Pendrive (it will be formatted).</li>
-                <li><strong>Internet:</strong> A stable connection is needed to download the ISO (approx 5GB-6GB).</li>
-            </ul>
+            <h2>⚠️ SAFETY FIRST</h2>
+            <p>Before any fix: Power OFF, wear protection, and back up your data. Your safety is your responsibility.</p>
         </section>
 
-        <article class="guide-step">
-            <h2>Step 1: The Toolkit (Official Links)</h2>
-            <p>Don't download from third-party sites. Use these official sources:</p>
+        <article class="guide-step" id="windows-guide">
+            <h2>💻 Install Windows OS from Scratch</h2>
+            <p>Follow these steps to clean install Windows 11/10 using a bootable USB.</p>
+            
             <div class="link-box">
-                <a href="https://www.microsoft.com/software-download/windows11" target="_blank" class="btn">Download Windows 11 ISO</a>
-                <a href="https://rufus.ie/" target="_blank" class="btn">Download Rufus (Bootable Tool)</a>
+                <a href="https://www.microsoft.com/software-download/" target="_blank" class="btn">Official Windows ISO</a>
+                <a href="https://rufus.ie/" target="_blank" class="btn secondary">Download Rufus</a>
             </div>
+
+            <ol>
+                <li><strong>Prepare USB:</strong> Open Rufus, select your ISO, set Partition to <strong>GPT</strong>, and click Start.</li>
+                <li><strong>Booting:</strong> Insert USB, restart PC, and tap your Boot Key (F12, F11, or Esc).</li>
+                <li><strong>Install:</strong> Choose "Custom: Install Windows only (advanced)".</li>
+                <li><strong>Partition:</strong> Select your Drive 0 and click Next to begin.</li>
+            </ol>
         </article>
 
-        <article class="guide-step">
-            <h2>Step 2: Create the Bootable USB</h2>
+        <article class="guide-step" id="linux-guide">
+            <h2>🐧 Install Ubuntu Linux (Free OS)</h2>
+            <p>A fast, secure, and open-source alternative to Windows.</p>
+            
+            <div class="link-box">
+                <a href="https://ubuntu.com/download/desktop" target="_blank" class="btn linux">Download Ubuntu ISO</a>
+            </div>
+
             <ol>
-                <li>Open <strong>Rufus</strong> and plug in your USB drive.</li>
-                <li>Click <strong>SELECT</strong> and choose your downloaded Windows ISO.</li>
-                <li><strong>Partition Scheme:</strong> Choose <strong>GPT</strong> for modern PCs (UEFI) or <strong>MBR</strong> for very old PCs.</li>
-                <li>Click <strong>START</strong>. Wait until the status bar says "READY."</li>
+                <li><strong>Create Media:</strong> Use Rufus in "ISO Image Mode" to flash the Ubuntu ISO to your USB.</li>
+                <li><strong>Live Mode:</strong> Boot from USB and select <strong>"Try Ubuntu"</strong> to test your Wi-Fi and hardware.</li>
+                <li><strong>Installation:</strong> Click "Install Ubuntu" and choose "Normal Installation".</li>
+                <li><strong>Setup:</strong> Select "Erase disk and install Ubuntu" (Warning: This wipes the drive!).</li>
+            </ol>
+        </article>
+
+        <hr class="section-divider">
+
+        <article class="guide-step">
+            <h2>📜 Get Damaged/Lost Certificates (JNTUA)</h2>
+            <p>Process for a Duplicate Consolidated Marks Memo (CMM).</p>
+            <ol>
+                <li><strong>Affidavit:</strong> Get a notarized affidavit on ₹50/100 stamp paper explaining the damage.</li>
+                <li><strong>Application:</strong> Visit the JNTUA Examination Portal and fill out the duplicate CMM form.</li>
+                <li><strong>Fees:</strong> Pay the required university fee via Online Challan or DD.</li>
+                <li><strong>Submission:</strong> Submit the affidavit and payment receipt to the Registrar/Director of Evaluation.</li>
             </ol>
         </article>
 
         <article class="guide-step">
-            <h2>Step 3: Booting from the USB</h2>
-            <p>Insert the USB into the target PC and turn it on. Immediately tap your <strong>Boot Menu Key</strong>:</p>
-            <table class="boot-table">
-                <tr><th>Brand</th><th>Boot Key</th></tr>
-                <tr><td>HP</td><td>F9 or Esc</td></tr>
-                <tr><td>Dell / Lenovo</td><td>F12</td></tr>
-                <tr><td>ASUS</td><td>F8 or Esc</td></tr>
-                <tr><td>Acer / MSI</td><td>F11</td></tr>
-            </table>
-            <p>Select your <strong>USB Flash Drive</strong> from the list and press Enter.</p>
-        </article>
-
-        <article class="guide-step">
-            <h2>Step 4: The Installation Screen</h2>
+            <h2>🚗 Change a Car Stepney (Spare Tire)</h2>
             <ol>
-                <li>Select Language and click <strong>Next > Install Now</strong>.</li>
-                <li>When asked for a key, click <strong>"I don't have a product key"</strong> (you can activate later).</li>
-                <li>Select your Windows Edition (Home or Pro).</li>
-                <li><strong>CRITICAL:</strong> Choose <strong>"Custom: Install Windows only (advanced)"</strong>.</li>
-                <li>Select the "Unallocated Space" or your "Drive 0" and click Next.</li>
+                <li><strong>Secure:</strong> Park on level ground, pull the handbrake, and use hazard lights.</li>
+                <li><strong>Loosen:</strong> Loosen the wheel nuts slightly <strong>before</strong> jacking the car up.</li>
+                <li><strong>Lift:</strong> Place the jack under the frame and lift until the tire clears the ground.</li>
+                <li><strong>Swap:</strong> Replace the flat with the stepney and tighten nuts in a star pattern.</li>
             </ol>
         </article>
 
-        <section class="pro-tip">
-            <h3>💡 Pro Tip</h3>
-            <p>Once installed, run <strong>Windows Update</strong> immediately to get your drivers for sound, Wi-Fi, and graphics automatically.</p>
+        <article class="guide-step">
+            <h2>⚡ Fix a Damaged Electric Fuse</h2>
+            <p><strong>Warning:</strong> Never touch the fuse box with wet hands.</p>
+            <ol>
+                <li><strong>Main Switch:</strong> Turn OFF the main power supply completely.</li>
+                <li><strong>Identify:</strong> Pull the fuse carrier and look for the broken or burnt wire.</li>
+                <li><strong>Replace:</strong> Use a new fuse wire or cartridge of the <strong>exact same rating</strong> (e.g. 16A).</li>
+                <li><strong>Restore:</strong> Push the carrier back in and turn on the main switch.</li>
+            </ol>
+        </article>
+
+        <section class="footer">
+            <p>Content updated for 2026. Keep fixing!</p>
         </section>
     </main>
 </body>
